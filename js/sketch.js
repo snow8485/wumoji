@@ -422,7 +422,7 @@ function setup() {
     //     edit_interface.style.display = 'none';
     // }
     let button = document.getElementById("button-container");
-    button.style.backgroundImage = 'url("../assets/start.png")';
+    button.style.backgroundImage = 'url("assets/start.png")';
 }
 
 
@@ -617,7 +617,7 @@ function NEXT() {
     //button_snap.position(200, 0);
     //}
     let button = document.getElementById("button-container");
-    button.style.backgroundImage = 'url("../assets/snap.png")';
+    button.style.backgroundImage = 'url("assets/snap.png")';
 
 }
 
@@ -635,9 +635,9 @@ function PROCEED() {
     const container = document.getElementById('emoji-control-container');
     // 获取容器内的所有按钮元素（假设按钮都有button标签）
     var buttonsS = container.querySelectorAll("button");
-    buttonsS[0].style.backgroundImage = 'url("../assets/earse.png")'
+    buttonsS[0].style.backgroundImage = 'url("assets/earse.png")'
     buttonsS[0].style.backgroundSize = '100% 100%'
-    buttonsS[1].style.backgroundImage = 'url("../assets/scale.png")'
+    buttonsS[1].style.backgroundImage = 'url("assets/scale.png")'
     buttonsS[1].style.backgroundSize = '100% 100%'
     // var thirdButton = buttonsS[3];
     // fourthButton.style.backgroundImage = "../ass"
@@ -646,9 +646,9 @@ function PROCEED() {
     const container2 = document.getElementById('emoji-input-button-area');
     // 获取容器内的所有按钮元素（假设按钮都有button标签）
     var buttonsS2 = container2.querySelectorAll("button");
-    buttonsS2[0].style.backgroundImage = 'url("../assets/delete.png")'
+    buttonsS2[0].style.backgroundImage = 'url("assets/delete.png")'
     buttonsS2[0].style.backgroundSize = '100% 100%'
-    buttonsS2[1].style.backgroundImage = 'url("../assets/enter.png")'
+    buttonsS2[1].style.backgroundImage = 'url("assets/enter.png")'
     buttonsS2[1].style.backgroundSize = '100% 100%'
 
     console.log(container2)
@@ -668,13 +668,13 @@ function PROCEED() {
     button.style.left = 'auto';
     button.style.transform = 'translateX(0)';
     button.style.right = '0';
-    button.style.backgroundImage = 'url("../assets/finish.png")';
+    button.style.backgroundImage = 'url("assets/finish.png")';
 }
 
 
 function RETAKE() {
     let button = document.getElementById("button-container");
-    button.style.backgroundImage = 'url("../assets/snap.png")';
+    button.style.backgroundImage = 'url("assets/snap.png")';
     //snap.hide();
     clear();
     seq = 3;
@@ -705,19 +705,19 @@ function SNAP() {
     seq = 2;
     var container = document.getElementById("button-container");
     container.style.backgroundImage = 'none'
-// 获取容器内的所有按钮元素（假设按钮都有button标签）
+    // 获取容器内的所有按钮元素（假设按钮都有button标签）
     var buttonsOne = container.querySelectorAll("button");
 
-// 检查是否至少有四个按钮
+    // 检查是否至少有四个按钮
     console.log(buttonsOne[2], buttonsOne[3])
     if (buttonsOne.length >= 4) {
         var fourthButton1 = buttonsOne[3];
         // 修改背景图片（这里使用内联样式，但通常建议将样式放在CSS中）
-        fourthButton1.style.backgroundImage = "url('../assets/proceed.png')";
+        fourthButton1.style.backgroundImage = "url('assets/proceed.png')";
         fourthButton1.style.width = '100%'
         var fourthButton = buttonsOne[4];
         // 修改背景图片（这里使用内联样式，但通常建议将样式放在CSS中）
-        fourthButton.style.backgroundImage = "url('../assets/retake.png')";
+        fourthButton.style.backgroundImage = "url('assets/retake.png')";
         return false;
     }
 }
@@ -739,7 +739,7 @@ function EDIT() {
     edit_time = !edit_time;
     const edit_interface = document.getElementById('interface-container');
     let button = document.getElementById("button-container");
-    button.style.backgroundImage = 'url("../assets/buttonBg.png")';
+    button.style.backgroundImage = 'url("assets/buttonBg.png")';
     button.style.backgroundSize = '100% 100%';
     button.style.position = 'absolute';
     button.style.left = '50%';
@@ -791,9 +791,9 @@ function ScaleMode() {
 
 
 function updateButtonLabels() {
-    buttons[0].elt.style.backgroundImage = eraseMode ? 'url("../assets/done.png")' : 'url("../assets/erase.png")';
+    buttons[0].elt.style.backgroundImage = eraseMode ? 'url("assets/done.png")' : 'url("assets/erase.png")';
     buttons[0].elt.style.backgroundColor = 'black';
-    buttons[1].elt.style.backgroundImage= scaleMode ? 'url("../assets/done.png")' : 'url("../assets/scale.png")';
+    buttons[1].elt.style.backgroundImage = scaleMode ? 'url("assets/done.png")' : 'url("assets/scale.png")';
     buttons[1].elt.style.backgroundColor = 'black';
 }
 
