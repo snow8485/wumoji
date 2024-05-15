@@ -705,18 +705,16 @@ function SNAP() {
     seq = 2;
     var container = document.getElementById("button-container");
     container.style.backgroundImage = 'none'
-    // 获取容器内的所有按钮元素（假设按钮都有button标签）
+
     var buttonsOne = container.querySelectorAll("button");
 
-    // 检查是否至少有四个按钮
+
     console.log(buttonsOne[2], buttonsOne[3])
     if (buttonsOne.length >= 4) {
         var fourthButton1 = buttonsOne[3];
-        // 修改背景图片（这里使用内联样式，但通常建议将样式放在CSS中）
         fourthButton1.style.backgroundImage = "url('assets/proceed.png')";
         fourthButton1.style.width = '100%'
         var fourthButton = buttonsOne[4];
-        // 修改背景图片（这里使用内联样式，但通常建议将样式放在CSS中）
         fourthButton.style.backgroundImage = "url('assets/retake.png')";
         return false;
     }
